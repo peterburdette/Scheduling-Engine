@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scheduling Engine</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="scheduling_engine.js"></script>
+<script type="text/javascript">
+window.onload = function(){
+	// Set the start and end dates/times (MM/DD/YY & HH/MM/SS)
+	dateCheck = scheduleEngine("January 1, 2018 11:59:00", "January 1, 2018 12:00:00");
+
+	// Checks for condition to be true
+	if (dateCheck == 1) {
+		$('#alert').append('This is a test message.'); // Set ID to the targeted element
+	} else {
+		$('#alert').append('This message has expired.'); // Set ID to the targeted element
+	}
+
+};
+</script>
+</head>
+<body>
+<div id="alert"></div>
+</body>
+</html>
