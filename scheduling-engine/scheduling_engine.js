@@ -1,3 +1,10 @@
+/*
+ @name		Scheduling Engine
+ @author	Peter Burdette
+ @version	1.0
+ @license	Released under the MIT license.
+*/
+
 function scheduleEngine(sDate, eDate) {
 	// Declaring Variables
 	var d = new Date(); // Pulls current date/time
