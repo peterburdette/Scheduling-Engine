@@ -3,7 +3,6 @@
 <head>
 <title>Scheduling Engine</title>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="scheduling_engine.js"></script>
 <script type="text/javascript">
 window.onload = function(){
@@ -12,9 +11,9 @@ window.onload = function(){
 
 	// Checks for condition to be true
 	if (dateCheck == 1) {
-		$('#alert').append('This is a test message.'); // Set ID to the targeted element
+		document.getElementById('alert').append('This is a test message.'); // Set ID to the targeted element
 	} else {
-		$('#alert').append('This message has expired.'); // Set ID to the targeted element
+		document.getElementById('alert').append('This message has expired.'); // Set ID to the targeted element
 	}
 
 };
