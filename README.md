@@ -10,14 +10,25 @@ Add the latest Scheduling Engine files to the header of your site.
 <script type="text/javascript">
 window.onload = function(){
 	// Set the start and end dates/times (MM/DD/YY & HH/MM/SS)
-	dateCheck = scheduleEngine("January 1, 2018 11:59:00", "January 1, 2018 12:00:00");
-
+	dateCheck = scheduleEngine("January 1, 2019 11:59:00", "January 1, 2019 12:00:00");
+	
+	// Identifies the target DOM element where the message should be appended
+	var id = 'alert';
+	// Message to be displayed
+	var message = document.createTextNode("This is a test message.");
+	// Expiration message to be displayed
+	var expirationMessage = document.createTextNode("This message has expired.");
+	
 	// Checks for condition to be true
 	if (dateCheck == 1) {
-		$('#alert').append('This is a test message.'); // Set ID to the targeted element
+		document.getElementById(id).appendChild(message); // Set ID to the targeted element
+	} else {
+		document.getElementById(id).appendChild(expirationMessage); // Set ID to the targeted element
 	}
 };
 </script>
+
+<div id="alert"></div>
 ```
 
 For deployment use the minified version instead:
