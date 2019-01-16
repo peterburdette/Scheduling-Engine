@@ -53,7 +53,7 @@ dateCheck = scheduleEngine("January 1, 2018 11:59:00", "January 1, 2018 12:00:00
 In the `dateCheck` conditional statement change `#alert` to the ID you assigned to your DOM element.
 
 ```html
-document.getElementById('alert').append('This is a test message.'); // Set ID to the targeted element
+document.getElementById(id).appendChild(message); // Set ID to the targeted element
 ```
 
 Once done publish your changes and enjoy!
@@ -63,7 +63,7 @@ Want to add a message or alternative content if you've reached the expiration da
 
 ```html
 else {
-	document.getElementById('alert').append('This message has expired.'); // Set ID to the targeted element
+	document.getElementById(id).appendChild(expirationMessage); // Set ID to the targeted element
 }
 ```
 
@@ -71,9 +71,9 @@ The final result should look something like this:
 ```html
 // Checks for condition to be true
 if (dateCheck == 1) {
-	document.getElementById('alert').append('This is a test message.'); // Set ID to the targeted element
+	document.getElementById(id).appendChild(message); // Set ID to the targeted element
 } else {
-	document.getElementById('alert').append('This message has expired.'); // Set ID to the targeted element
+	document.getElementById(id).appendChild(expirationMessage); // Set ID to the targeted element
 }
 ```
 
