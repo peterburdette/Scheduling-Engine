@@ -77,6 +77,10 @@ if (dateCheck == 1) {
 }
 ```
 
+## Demo
+
+See the demo on <a href="https://jsfiddle.net/q09f4kj7/">JSFiddle</a>.
+
 ## Browser Support
 
 *Supported Browsers* : Chrome, Firefox, Safari, Opera, Edge, IE7+.
